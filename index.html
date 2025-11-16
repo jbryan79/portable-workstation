@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portable Workstation</title>
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- HEADER -->
+  <header class="p-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Portable Workstation</h1>
+
+    <select id="themeSelector"
+      class="px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white">
+      <option value="theme-dark">Dark</option>
+      <option value="theme-light">Light</option>
+      <option value="theme-neon">Neon</option>
+    </select>
+  </header>
+
+  <!-- HERO -->
+  <section class="text-center py-20">
+    <h2 class="text-5xl font-bold mb-4">Build Your Perfect Portable Rig</h2>
+    <p class="text-lg opacity-80">AI-powered recommendations. Hand-selected gear. Zero fluff.</p>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section id="productGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+    <!-- JS will inject product cards here -->
+  </section>
+
+  <!-- AI CHAT BUTTON -->
+  <button id="aiChatToggle"
+    class="fixed bottom-5 right-5 p-4 rounded-full shadow-lg transition"
+    style="background: var(--chat-user-bg); color: var(--chat-user-text);">
+    💬
+  </button>
+
+  <!-- AI CHAT WINDOW -->
+  <div id="aiChatWindow"
+    class="fixed bottom-24 right-5 w-80 rounded-xl shadow-xl p-4 hidden border"
+    style="background: var(--chat-bg); border-color: var(--chat-border); color: var(--chat-text);">
+    
+    <div class="font-bold mb-2">AI Shopping Assistant</div>
+
+    <div id="aiChatMessages"
+      class="h-64 overflow-y-auto p-2 rounded-lg text-sm space-y-3"
+      style="background: var(--chat-bot-bg); border: 1px solid var(--chat-border);">
+    </div>
+
+    <div class="flex mt-3">
+      <input id="aiChatInput"
+        class="flex-1 p-2 rounded-l-lg border"
+        style="background: var(--chat-bg); border-color: var(--chat-border); color: var(--chat-text);"
+        placeholder="Ask what to buy next..."/>
+
+      <button id="aiChatSend"
+        class="px-4 rounded-r-lg"
+        style="background: var(--chat-user-bg); color: var(--chat-user-text);">
+        Send
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
