@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portable Workstation</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind config -->
   <script>
     tailwind.config = {
       theme: {
@@ -21,9 +19,7 @@
     };
   </script>
 
-  <!-- THEMES -->
   <style>
-    /* Default Variables (Dark Pro Studio) */
     :root {
       --bg: #020617;
       --text: #e5e7eb;
@@ -33,7 +29,6 @@
       --accent: #38bdf8;
       --accent-2: #22c55e;
       --btn-text: #020617;
-
       --chat-bg: #020617;
       --chat-text: #e5e7eb;
       --chat-border: #1f2937;
@@ -43,7 +38,6 @@
       --chat-bot-text: #e5e7eb;
     }
 
-    /* Apple Clean */
     .theme-apple {
       --bg: #f5f5f7;
       --text: #111827;
@@ -53,7 +47,6 @@
       --accent: #2563eb;
       --accent-2: #38bdf8;
       --btn-text: #ffffff;
-
       --chat-bg: #ffffff;
       --chat-text: #111827;
       --chat-border: #e5e7eb;
@@ -63,9 +56,8 @@
       --chat-bot-text: #111827;
     }
 
-    /* Neon */
     .theme-neon {
-      --bg: #000;
+      --bg: #000000;
       --text: #0ff;
       --muted: #67e8f9;
       --card-bg: #000;
@@ -73,7 +65,6 @@
       --accent: #22d3ee;
       --accent-2: #f472b6;
       --btn-text: #000;
-
       --chat-bg: #000;
       --chat-text: #0ff;
       --chat-border: #0ff5;
@@ -83,7 +74,6 @@
       --chat-bot-text: #0ff;
     }
 
-    /* Amazon Affiliate Clean */
     .theme-amazon {
       --bg: #f3f4f6;
       --text: #111827;
@@ -93,7 +83,6 @@
       --accent: #2563eb;
       --accent-2: #f59e0b;
       --btn-text: #ffffff;
-
       --chat-bg: #ffffff;
       --chat-text: #111827;
       --chat-border: #e5e7eb;
@@ -103,7 +92,6 @@
       --chat-bot-text: #111827;
     }
 
-    /* Ultra Gradient */
     .theme-gradient {
       --bg: #020617;
       --text: #e5e7eb;
@@ -113,13 +101,12 @@
       --accent: #6366f1;
       --accent-2: #ec4899;
       --btn-text: #020617;
-
-      --chat-bg: rgba(15, 23, 42, 0.95);
+      --chat-bg: rgba(15, 23, 42, 0.9);
       --chat-text: #e5e7eb;
       --chat-border: rgba(148, 163, 184, 0.4);
       --chat-user-bg: #6366f1;
       --chat-user-text: #020617;
-      --chat-bot-bg: rgba(15, 23, 42, 0.95);
+      --chat-bot-bg: rgba(15, 23, 42, 0.9);
       --chat-bot-text: #e5e7eb;
     }
 
@@ -134,74 +121,122 @@
       border: 1px solid var(--border);
       border-radius: 0.75rem;
     }
-
     .btn {
       background: var(--accent);
       color: var(--btn-text);
-      border-radius: 0.75rem;
       padding: 0.5rem 1rem;
+      border-radius: 0.75rem;
       font-weight: 600;
-    }
-
-    .chat-window {
-      background: var(--chat-bg);
-      border: 1px solid var(--chat-border);
-      color: var(--chat-text);
-      border-radius: 0.75rem;
-    }
-
-    .chat-toggle {
-      background: var(--chat-user-bg);
-      color: var(--chat-user-text);
-      border-radius: 999px;
-    }
-
-    .chat-bubble-user {
-      background: var(--chat-user-bg);
-      color: var(--chat-user-text);
-      border-radius: 0.75rem;
-    }
-
-    .chat-bubble-bot {
-      background: var(--chat-bot-bg);
-      color: var(--chat-bot-text);
-      border-radius: 0.75rem;
     }
   </style>
 </head>
 
 <body class="min-h-screen">
 
-  <!-- HEADER -->
-  <header class="p-6 max-w-5xl mx-auto flex items-center justify-between">
-    <h1 class="text-3xl font-bold">Portable Workstation</h1>
+<header class="p-6 max-w-5xl mx-auto flex justify-between items-center">
+  <h1 class="text-3xl font-bold">Portable Workstation</h1>
 
-    <select id="themeSelector"
-      class="px-3 py-2 rounded-lg border border-[var(--border)] bg-[var(--card-bg)]">
-      <option value="theme-darkpro">Dark Pro</option>
-      <option value="theme-apple">Apple Clean</option>
-      <option value="theme-neon">Neon</option>
-      <option value="theme-amazon">Amazon Clean</option>
-      <option value="theme-gradient">Ultra Gradient</option>
-    </select>
-  </header>
+  <select id="themeSelector"
+    class="px-3 py-2 rounded-lg border border-[var(--border)] bg-[var(--card-bg)]">
+    <option value="theme-darkpro">Dark Pro</option>
+    <option value="theme-apple">Apple Clean</option>
+    <option value="theme-neon">Neon</option>
+    <option value="theme-amazon">Amazon Clean</option>
+    <option value="theme-gradient">Ultra Gradient</option>
+  </select>
+</header>
 
-  <!-- HERO -->
-  <section class="text-center py-20 max-w-3xl mx-auto">
-    <h2 class="text-5xl font-bold mb-4"
-      style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; color: transparent;">
-      Build Your Perfect Portable Rig
-    </h2>
-    <p class="text-lg opacity-80">
-      Five themes. One layout. Fully dynamic and AI-powered.
-    </p>
-  </section>
+<section class="text-center py-20 max-w-3xl mx-auto">
+  <h2 class="text-5xl font-bold mb-4"
+    style="background: linear-gradient(135deg, var(--accent), var(--accent-2));
+           -webkit-background-clip: text; color: transparent;">
+    Build Your Perfect Portable Rig
+  </h2>
+  <p class="text-lg opacity-80">Five themes. One layout. Fully dynamic and AI-powered.</p>
+</section>
 
-  <!-- PRODUCT GRID -->
-  <section id="productGrid"
-    class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-  </section>
+<section id="productGrid"
+  class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+</section>
 
-  <!-- CHAT BUTTON -->
-  <button id="aiChatToggle"
-    class="chat-toggle fixed bottom-5 right-5 h-14 w-14 flex items-center justify-center shadow-
+<button id="aiChatToggle"
+  class="fixed bottom-5 right-5 h-14 w-14 flex items-center justify-center shadow-xl text-2xl"
+  style="background: var(--accent); color: var(--btn-text); border-radius: 999px;">
+  💬
+</button>
+
+<div id="aiChatWindow"
+  class="fixed bottom-24 right-5 w-80 max-w-[92vw] p-4 hidden shadow-2xl"
+  style="background: var(--chat-bg); border: 1px solid var(--chat-border); border-radius: 0.75rem;">
+  <div class="flex justify-between mb-2">
+    <span class="font-semibold">AI Shopping Assistant</span>
+    <button id="aiChatClose" class="opacity-70 hover:opacity-100">Close</button>
+  </div>
+
+  <div id="aiChatMessages"
+    class="h-64 overflow-y-auto p-2 border rounded-lg space-y-3 text-sm"
+    style="border-color: var(--chat-border);">
+  </div>
+
+  <div class="flex mt-3">
+    <input id="aiChatInput"
+      class="flex-1 p-2 rounded-l-lg border bg-transparent"
+      style="border-color: var(--chat-border);"
+      placeholder="Ask what to buy next..." />
+    <button id="aiChatSend" class="btn rounded-l-none">Send</button>
+  </div>
+</div>
+
+<script>
+const themeSelector = document.getElementById("themeSelector");
+themeSelector.onchange = e => document.documentElement.className = e.target.value;
+
+const products = [
+  { name: "Your Laptop", price: "$999", img: "https://via.placeholder.com/600x400", tag: "Ultra portable", link: "#" }
+];
+
+document.getElementById("productGrid").innerHTML = products.map(p=>`
+  <article class="card p-4 flex flex-col gap-3 shadow-lg">
+    <img src="${p.img}" class="rounded-lg h-40 object-cover"/>
+    <h4 class="font-semibold text-lg">${p.name}</h4>
+    <p class="opacity-70 text-sm">${p.tag}</p>
+    <p class="font-semibold">${p.price}</p>
+    <a href="${p.link}" class="btn text-center mt-auto">View</a>
+  </article>
+`).join("");
+
+const chatWindow = document.getElementById("aiChatWindow");
+document.getElementById("aiChatToggle").onclick = ()=> chatWindow.classList.toggle("hidden");
+document.getElementById("aiChatClose").onclick = ()=> chatWindow.classList.add("hidden");
+
+const chatMessages = document.getElementById("aiChatMessages");
+
+function addMessage(type, text){
+  const bubble = document.createElement("div");
+  bubble.className = type==="user" ? "text-right" : "text-left";
+  bubble.innerHTML = `<span style="padding:6px 10px; display:inline-block; border-radius:8px;
+    background:${type==="user"?"var(--chat-user-bg)":"var(--chat-bot-bg)"};
+    color:${type==="user"?"var(--chat-user-text)":"var(--chat-bot-text)"};">${text}</span>`;
+  chatMessages.appendChild(bubble);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+document.getElementById("aiChatSend").onclick = async ()=>{
+  const input = document.getElementById("aiChatInput");
+  const prompt = input.value.trim();
+  if(!prompt) return;
+  addMessage("user", prompt);
+  input.value="";
+  try{
+    const r = await fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({prompt})});
+    const d = await r.json();
+    addMessage("bot", d.reply||"Try again.");
+  }catch{
+    addMessage("bot","Error contacting AI.");
+  }
+};
+</script>
+
+</body>
+</html>
