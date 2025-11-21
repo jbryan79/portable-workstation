@@ -120,6 +120,55 @@
             color: #ffffff;
             min-height: 100vh;
             overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(52, 211, 153, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .sticky-header .brand-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+
+        .sticky-header .shop-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(52, 211, 153, 0.1);
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            border-radius: 6px;
+            color: #34d399;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-header .shop-link:hover {
+            background: rgba(52, 211, 153, 0.2);
+            border-color: rgba(52, 211, 153, 0.5);
+            color: #10b981;
         }
 
         /* Animated Background */
@@ -620,6 +669,15 @@
     </style>
 </head>
 <body>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="brand-name">UGREEN</div>
+        <a href="https://amzn.to/43Fb0cV" class="shop-link">
+            <span>Shop</span>
+            <span>→</span>
+        </a>
+    </header>
+
     <div class="bg-grid"></div>
 
     <div class="container">
@@ -715,7 +773,7 @@
                         </div>
                     </div>
 
-                    <a href="https://www.amazon.com/dp/B0BR3M8XHK?tag=mylineup-20" class="cta-button">
+                    <a href="https://www.amazon.com/dp/B0BR3M8XHK?tag=YOUR-TAG" class="cta-button">
                         <span>Check Latest Price on Amazon</span>
                         <span>→</span>
                     </a>
@@ -766,7 +824,7 @@
                         </div>
                     </div>
 
-                    <a href="https://www.amazon.com/dp/B08P8X2DBZ?tag=mylineup-20" class="cta-button">
+                    <a href="https://www.amazon.com/dp/B08P8X2DBZ?tag=YOUR-TAG" class="cta-button">
                         <span>Check Latest Price on Amazon</span>
                         <span>→</span>
                     </a>
@@ -816,7 +874,7 @@
                         </div>
                     </div>
 
-                    <a href="https://www.amazon.com/dp/B0B3D9XW8X?tag=mylineup-20" class="cta-button">
+                    <a href="https://www.amazon.com/dp/B0B3D9XW8X?tag=YOUR-TAG" class="cta-button">
                         <span>Check Latest Price on Amazon</span>
                         <span>→</span>
                     </a>
@@ -958,7 +1016,7 @@
                 These three products are my daily drivers, and I genuinely can't imagine switching to anything else.
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://www.amazon.com/stores/UGREEN/page/DD6CFBED-164E-4990-91AE-1AA2F3DB8952?tag=mylineup-20" class="cta-button" style="width: auto; padding: 18px 50px;">
+                <a href="https://www.amazon.com/stores/UGREEN/page/DD6CFBED-164E-4990-91AE-1AA2F3DB8952?tag=YOUR-TAG" class="cta-button" style="width: auto; padding: 18px 50px;">
                     <span>Shop UGREEN on Amazon</span>
                     <span>→</span>
                 </a>
