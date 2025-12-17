@@ -131,7 +131,19 @@ function generateProductCard(product, amazonData) {
   const imageSrc = amazonData?.image || '';
   const imageHTML = imageSrc ?
     `<img src="${imageSrc}" alt="${product.customTitle}" style="width: 100%; height: 100%; object-fit: contain;">` :
-    `<span style="font-size: 4rem;">${getEmojiForBrand(product.brand)}</span>`;
+    `<div class="emoji-badge" style="
+      width: 140px;
+      height: 140px;
+      background: linear-gradient(135deg, #ff8c32 0%, #ff6b35 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(255, 140, 50, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 12px 28px rgba(255, 140, 50, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(255, 140, 50, 0.3)';">
+      <span style="font-size: 5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">${getEmojiForBrand(product.brand)}</span>
+    </div>`;
 
   const stars = amazonData?.starRating ? generateStars(amazonData.starRating) : '★★★★★';
   const reviewText = amazonData?.reviewCount && amazonData.reviewCount > 0 ?
