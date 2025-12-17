@@ -192,18 +192,21 @@
 
         .copy-notification {
             position: absolute;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
             background: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border-radius: 8px;
             font-weight: 700;
+            font-size: 1.1rem;
             opacity: 0;
             pointer-events: none;
             animation: slideInUp 0.3s ease forwards;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 4px 15px rgba(76, 175, 80, 0.6);
+            z-index: 100;
+            white-space: nowrap;
         }
 
         .copy-notification.show {
@@ -822,24 +825,13 @@
                 <!-- OLIGHT Baton4 -->
                 <div class="product-card">
                     <div class="card-content">
-                        <div class="product-image" style="margin-bottom: 35px;">
-                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-height: 200px; width: auto;">
-                                <rect x="70" y="30" width="60" height="140" rx="8" fill="url(#flashlightGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <circle cx="100" cy="50" r="15" fill="rgba(255, 140, 50, 0.3)" stroke="#ff8c32" stroke-width="2">
-                                    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-                                </circle>
-                                <rect x="75" y="80" width="50" height="4" rx="2" fill="#ff8c32" opacity="0.5"/>
-                                <rect x="75" y="90" width="50" height="4" rx="2" fill="#ff8c32" opacity="0.5"/>
-                                <rect x="75" y="100" width="50" height="4" rx="2" fill="#ff8c32" opacity="0.5"/>
-                                <circle cx="100" cy="155" r="8" fill="#ff8c32"/>
-                                <text x="100" y="160" text-anchor="middle" fill="#0a0a0a" font-size="8" font-weight="bold">USB-C</text>
-                                <defs>
-                                    <linearGradient id="flashlightGrad" x1="70" y1="30" x2="130" y2="170">
-                                        <stop offset="0%" stop-color="#3a2a1a"/>
-                                        <stop offset="100%" stop-color="#1a1410"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 35px;">
+                            <div class="product-image" style="background: rgba(255, 140, 50, 0.05); padding: 15px; border-radius: 16px;">
+                                <img src="images/01 batan4.jpeg" alt="OLIGHT Baton4 Premium Edition" style="width: 100%; height: auto; max-height: 220px; object-fit: contain; mix-blend-mode: multiply; filter: contrast(1.1);">
+                            </div>
+                            <div class="product-image" style="background: rgba(255, 140, 50, 0.05); padding: 15px; border-radius: 16px;">
+                                <img src="images/02 baton4.jpeg" alt="OLIGHT Baton4 Premium Edition" style="width: 100%; height: auto; max-height: 220px; object-fit: contain; mix-blend-mode: multiply; filter: contrast(1.1);">
+                            </div>
                         </div>
                         <span class="product-badge" style="display: block; margin-bottom: 15px;">OLIGHT</span>
                         <h3 style="margin-top: 10px;">Baton4 Premium Edition</h3>
@@ -910,32 +902,47 @@
             </div>
 
             <div class="products-grid">
-                <!-- Placeholder for knives - user will add -->
-                <div class="product-card" style="border: 2px dashed rgba(255, 140, 50, 0.3);">
+                <!-- Spyderco Para Military 2 -->
+                <div class="product-card">
                     <div class="card-content">
-                        <div class="product-image">
-                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M40 100 L120 100 L160 80 L160 120 L120 100 Z" fill="url(#knifeGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <rect x="35" y="90" width="30" height="20" rx="3" fill="rgba(255, 140, 50, 0.3)" stroke="#ff8c32" stroke-width="1.5"/>
-                                <line x1="45" y1="95" x2="55" y2="95" stroke="#ff8c32" stroke-width="1"/>
-                                <line x1="45" y1="100" x2="55" y2="100" stroke="#ff8c32" stroke-width="1"/>
-                                <line x1="45" y1="105" x2="55" y2="105" stroke="#ff8c32" stroke-width="1"/>
-                                <defs>
-                                    <linearGradient id="knifeGrad" x1="40" y1="80" x2="160" y2="120">
-                                        <stop offset="0%" stop-color="#3a2a1a"/>
-                                        <stop offset="100%" stop-color="#888"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 30px;">
+                            <div class="product-image" style="background: rgba(255, 140, 50, 0.05); padding: 10px; border-radius: 16px;">
+                                <img src="images/01_Para Military 2.jpeg" alt="Spyderco Para Military 2" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; mix-blend-mode: multiply; filter: contrast(1.1);">
+                            </div>
+                            <div class="product-image" style="background: rgba(255, 140, 50, 0.05); padding: 10px; border-radius: 16px;">
+                                <img src="images/Para Military 2.jpeg" alt="Spyderco Para Military 2" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; mix-blend-mode: multiply; filter: contrast(1.1);">
+                            </div>
                         </div>
-                        <h3 style="color: #ff8c32;">Coming Soon: Knife Collection</h3>
+                        <span class="product-badge">SPYDERCO</span>
+                        <h3>Para Military 2</h3>
                         <p class="description">
-                            I'm curating my knife collection to share here. From affordable workhorses to premium folders,
-                            I'll be adding my most-carried blades with detailed reviews and real-world carry insights.
+                            The blade that started my 15+ year obsession. Upgraded steel surpasses the legendary S30V.
+                            I've put this through absolute hell - cutting wood with a hammer for a year straight.
+                            Still perfect. Sticky camo handles you literally can't drop. Must-have EDC.
                         </p>
-                        <p style="margin-top: 20px; color: #888; font-style: italic; text-align: center;">
-                            Check back soon for my EDC knife recommendations
-                        </p>
+
+                        <div class="why-love">
+                            <h4>Why This Is My Go-To Blade</h4>
+                            <ul>
+                                <li>15+ years, same knife - ultimate durability proof</li>
+                                <li>Survived brutal hammer & wood cutting torture test</li>
+                                <li>Locking mechanism still flawless after abuse</li>
+                                <li>Sticky camo grip - impossible to drop</li>
+                                <li>Blade snob approved - started my obsession</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-rating">
+                            <div class="rating">
+                                <div class="stars">★★★★★</div>
+                                <div class="review-count">15+ Years EDC Proven</div>
+                            </div>
+                        </div>
+
+                        <a href="https://amzn.to/48YU7vo" class="cta-button" target="_blank" rel="noopener noreferrer">
+                            <span>Check Latest Price on Amazon</span>
+                            <span>→</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -957,27 +964,7 @@
                 <div class="product-card">
                     <div class="card-content">
                         <div class="product-image">
-                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="40" y="80" width="120" height="40" rx="8" fill="url(#hubGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <rect x="55" y="95" width="20" height="10" rx="2" fill="rgba(255, 140, 50, 0.5)" stroke="#ff8c32" stroke-width="1"/>
-                                <rect x="85" y="95" width="20" height="10" rx="2" fill="rgba(255, 140, 50, 0.5)" stroke="#ff8c32" stroke-width="1"/>
-                                <rect x="115" y="95" width="20" height="10" rx="2" fill="rgba(255, 140, 50, 0.5)" stroke="#ff8c32" stroke-width="1"/>
-                                <circle cx="50" cy="50" r="4" fill="#ff8c32">
-                                    <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
-                                </circle>
-                                <circle cx="100" cy="50" r="4" fill="#ff8c32">
-                                    <animate attributeName="r" values="3;6;3" dur="2s" begin="0.4s" repeatCount="indefinite"/>
-                                </circle>
-                                <circle cx="150" cy="50" r="4" fill="#ff8c32">
-                                    <animate attributeName="r" values="3;6;3" dur="2s" begin="0.8s" repeatCount="indefinite"/>
-                                </circle>
-                                <defs>
-                                    <linearGradient id="hubGrad" x1="40" y1="80" x2="160" y2="120">
-                                        <stop offset="0%" stop-color="#3a2a1a"/>
-                                        <stop offset="100%" stop-color="#1a1410"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="images/5-in-1 USB-C Hub.jpeg" alt="UGREEN 5-in-1 USB-C Hub" style="width: 100%; height: auto; max-height: 220px; object-fit: contain; border-radius: 16px;">
                         </div>
                         <span class="product-badge">UGREEN</span>
                         <h3>5-in-1 USB-C Hub</h3>
@@ -1013,22 +1000,7 @@
                 <div class="product-card">
                     <div class="card-content">
                         <div class="product-image">
-                            <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="20" y="25" width="30" height="30" rx="4" fill="url(#hdmiGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <rect x="150" y="25" width="30" height="30" rx="4" fill="url(#hdmiGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <path d="M50 40 L150 40" stroke="#ff8c32" stroke-width="3" stroke-dasharray="5,5">
-                                    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
-                                </path>
-                                <rect x="25" y="32" width="5" height="16" fill="#ff8c32"/>
-                                <rect x="32" y="32" width="5" height="16" fill="#ff8c32"/>
-                                <rect x="39" y="32" width="5" height="16" fill="#ff8c32"/>
-                                <defs>
-                                    <linearGradient id="hdmiGrad" x1="20" y1="25" x2="50" y2="55">
-                                        <stop offset="0%" stop-color="#3a2a1a"/>
-                                        <stop offset="100%" stop-color="#1a1410"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="images/hdmi to mini hdmi.jpeg" alt="UGREEN 4K Micro HDMI Cable" style="width: 100%; height: auto; max-height: 220px; object-fit: contain; border-radius: 16px;">
                         </div>
                         <span class="product-badge">UGREEN</span>
                         <h3>4K Micro HDMI Cable 6.6FT</h3>
@@ -1064,21 +1036,7 @@
                 <div class="product-card">
                     <div class="card-content">
                         <div class="product-image">
-                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="60" y="60" width="80" height="100" rx="12" fill="url(#chargerGrad)" stroke="#ff8c32" stroke-width="2"/>
-                                <circle cx="100" cy="90" r="15" fill="rgba(255, 140, 50, 0.3)" stroke="#ff8c32" stroke-width="2"/>
-                                <rect x="85" y="120" width="30" height="25" rx="4" fill="rgba(255, 140, 50, 0.3)" stroke="#ff8c32" stroke-width="1.5"/>
-                                <path d="M95 85 L100 90 L105 85" stroke="#ff8c32" stroke-width="2" stroke-linecap="round">
-                                    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
-                                </path>
-                                <text x="100" y="105" text-anchor="middle" fill="#ff8c32" font-size="12" font-weight="bold">130W</text>
-                                <defs>
-                                    <linearGradient id="chargerGrad" x1="60" y1="60" x2="140" y2="160">
-                                        <stop offset="0%" stop-color="#3a2a1a"/>
-                                        <stop offset="100%" stop-color="#1a1410"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="images/UGREEN 130W.jpeg" alt="UGREEN 130W USB-C Car Charger" style="width: 100%; height: auto; max-height: 220px; object-fit: contain; border-radius: 16px;">
                         </div>
                         <span class="product-badge">UGREEN</span>
                         <h3>130W USB-C Car Charger</h3>
@@ -1183,8 +1141,8 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
                 <!-- Bicycle -->
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
-                        <img src="images/bicycle.jpeg" alt="Bicycle" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <div style="width: 100%; min-height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <img src="images/bicycle.jpeg" alt="Bicycle" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; border-radius: 12px; mix-blend-mode: multiply; filter: contrast(1.1);">
                     </div>
                     <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Bicycle</h3>
                     <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
@@ -1202,8 +1160,8 @@
 
                 <!-- Satellite in Cage -->
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
-                        <img src="images/sattelite.jpeg" alt="Satellite in Cage" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <div style="width: 100%; min-height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <img src="images/sattelite.jpeg" alt="Satellite in Cage" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; border-radius: 12px; mix-blend-mode: multiply; filter: contrast(1.1);">
                     </div>
                     <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Satellite in Cage</h3>
                     <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
@@ -1221,8 +1179,8 @@
 
                 <!-- Trick Bolt -->
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
-                        <img src="images/bolt.jpeg" alt="Trick Bolt" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <div style="width: 100%; min-height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <img src="images/bolt.jpeg" alt="Trick Bolt" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; border-radius: 12px; mix-blend-mode: multiply; filter: contrast(1.1);">
                     </div>
                     <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Trick Bolt</h3>
                     <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
@@ -1240,8 +1198,8 @@
 
                 <!-- Star in Circle -->
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
-                        <img src="images/Star in Circle.jpeg" alt="Star in Circle" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <div style="width: 100%; min-height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <img src="images/Star in Circle.jpeg" alt="Star in Circle" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; border-radius: 12px; mix-blend-mode: multiply; filter: contrast(1.1);">
                     </div>
                     <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Star in Circle</h3>
                     <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
@@ -1259,8 +1217,8 @@
 
                 <!-- Horseshoe -->
                 <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
-                        <img src="images/horseshoe.jpeg" alt="Horseshoe" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                    <div style="width: 100%; min-height: 200px; background: rgba(255, 140, 50, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <img src="images/horseshoe.jpeg" alt="Horseshoe" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; border-radius: 12px; mix-blend-mode: multiply; filter: contrast(1.1);">
                     </div>
                     <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Horseshoe</h3>
                     <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
