@@ -19,7 +19,9 @@
       "Bash(powershell:*)",
       "Bash(netlify env:list:*)",
       "Bash(node src/extract-asins.js:*)",
-      "Bash(netlify status:*)"
+      "Bash(netlify status:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:jamesabryan.com)"
     ],
     "deny": [],
     "ask": []
