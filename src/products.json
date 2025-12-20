@@ -42,6 +42,21 @@
           ],
           "brand": "SPYDERCO",
           "badge": "15+ Years EDC Proven"
+        },
+        {
+          "asin": "B005CPWHPY",
+          "shortLink": "https://amzn.to/44F1ZB7",
+          "customTitle": "Spyderco Yojimbo 2",
+          "customDescription": "This knife caught my eye from afar - unique, dangerous-looking, not your typical EDC. The Yojimbo has been with me since the beginning of my Spyderco obsession. That compression lock is the ultimate fidget toy - like Benchmade's Axis lock but more interesting, more resonant. I was on a mission to collect them all. This knife just looks scary and I enjoyed carrying it and showing it off. More of a collector's piece for me, but it cuts like a champ like all Spyderco knives.",
+          "whyLove": [
+            "Compression lock = ultimate fidget mechanism",
+            "Unique, intimidating design - real head-turner",
+            "Part of my original Spyderco collection journey",
+            "Collector's piece that performs like a workhorse",
+            "Spyderco quality cutting performance"
+          ],
+          "brand": "SPYDERCO",
+          "badge": "Collector's Grade"
         }
       ]
     },
@@ -108,9 +123,7 @@
       "id": "gadgets",
       "name": "Gadgets & Puzzles",
       "icon": "🧩",
-      "description": "Unique puzzles, brain teasers, and EDC gadgets with 20% discount at checkout using my code. These conversation-starting pieces are perfect additions to any EDC collection!",
-      "couponCode": "DOGMWWBQ",
-      "discount": "20% OFF",
+      "description": "Unique puzzles, brain teasers, and EDC gadgets. These conversation-starting pieces are perfect additions to any EDC collection!",
       "products": [
         {
           "asin": "B0FLQK74VY",
