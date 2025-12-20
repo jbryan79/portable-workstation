@@ -146,205 +146,6 @@
             100% { left: 100%; }
         }
 
-        @keyframes pulseCoupon {
-            0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 8px 25px rgba(255, 140, 50, 0.3);
-            }
-            50% {
-                transform: scale(1.05);
-                box-shadow: 0 12px 35px rgba(255, 140, 50, 0.6);
-            }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .coupon-container {
-            position: relative;
-            animation: pulseCoupon 2s ease-in-out infinite;
-        }
-
-        .coupon-code {
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .coupon-code:hover {
-            transform: scale(1.05);
-        }
-
-        .coupon-code:active {
-            transform: scale(0.95);
-        }
-
-        .copy-notification {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            background: #4CAF50;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            opacity: 0;
-            pointer-events: none;
-            animation: slideInUp 0.3s ease forwards;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 4px 15px rgba(76, 175, 80, 0.6);
-            z-index: 100;
-            white-space: nowrap;
-        }
-
-        .copy-notification.show {
-            opacity: 1;
-        }
-
-        .click-instruction {
-            animation: bounce 2s infinite;
-        }
-
-        /* Floating Promo Button */
-        .promo-button {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%);
-            color: #0a0a0a;
-            padding: 18px 30px;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            cursor: pointer;
-            box-shadow: 0 8px 25px rgba(255, 140, 50, 0.4);
-            z-index: 999;
-            border: none;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-
-        .promo-button:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 12px 35px rgba(255, 140, 50, 0.6);
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 8px 25px rgba(255, 140, 50, 0.4);
-            }
-            50% {
-                box-shadow: 0 8px 35px rgba(255, 140, 50, 0.7);
-            }
-        }
-
-        /* Modal Overlay */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 9999;
-            overflow-y: auto;
-            overflow-x: hidden;
-            animation: fadeIn 0.3s ease;
-            padding: 40px 20px;
-        }
-
-        .modal-overlay.active {
-            display: block;
-        }
-
-        .modal-content {
-            position: relative;
-            max-width: 1200px;
-            width: 100%;
-            background: linear-gradient(135deg, #1a1410 0%, #0a0a0a 100%);
-            border-radius: 24px;
-            border: 2px solid rgba(255, 140, 50, 0.4);
-            padding: 50px;
-            margin: 0 auto;
-            animation: slideUp 0.4s ease;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 140, 50, 0.2);
-            border: 2px solid rgba(255, 140, 50, 0.4);
-            color: #ff8c32;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .modal-close:hover {
-            background: rgba(255, 140, 50, 0.3);
-            transform: rotate(90deg);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .promo-button {
-                bottom: 20px;
-                right: 20px;
-                padding: 14px 20px;
-                font-size: 0.9rem;
-            }
-
-            .modal-content {
-                padding: 30px 20px;
-            }
-        }
-
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -949,6 +750,87 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Spyderco Yojimbo 2 -->
+                <div class="product-card">
+                    <div class="card-content">
+                        <div class="product-image">
+                            <span style="font-size: 4rem;">🔪</span>
+                        </div>
+                        <span class="product-badge">SPYDERCO</span>
+                        <h3>Yojimbo 2</h3>
+                        <p class="description">
+                            This knife caught my eye from afar - unique, dangerous-looking, not your typical EDC. The Yojimbo has been with me since the beginning of my Spyderco obsession. That compression lock is the ultimate fidget toy - like Benchmade's Axis lock but more interesting, more resonant. I was on a mission to collect them all. This knife just looks scary and I enjoyed carrying it and showing it off. More of a collector's piece for me, but it cuts like a champ like all Spyderco knives.
+                        </p>
+
+                        <div class="why-love">
+                            <h4>Why I Love This</h4>
+                            <ul>
+                                <li>Compression lock = ultimate fidget mechanism</li>
+                                <li>Unique, intimidating design - real head-turner</li>
+                                <li>Part of my original Spyderco collection journey</li>
+                                <li>Collector's piece that performs like a workhorse</li>
+                                <li>Spyderco quality cutting performance</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-rating">
+                            <div class="rating">
+                                <div class="stars">★★★★★</div>
+                                <div class="review-count">Collector's Grade</div>
+                            </div>
+                        </div>
+
+                        <a href="https://amzn.to/44F1ZB7" class="cta-button" target="_blank" rel="noopener noreferrer">
+                            <span>Check Latest Price on Amazon</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Spyderco Rescue -->
+                <div class="product-card">
+                    <div class="card-content">
+                        <div class="product-image">
+                            <span style="font-size: 4rem;">🔪</span>
+                        </div>
+                        <span class="product-badge">SPYDERCO</span>
+                        <h3>Rescue</h3>
+                        <p class="description">
+                            This is currently in operation next to my Para Military - it lives in my truck. When I need to rescue someone, I'm confident with this blade. Slices through ropes and seat belts effortlessly. The rounded edge keeps it as safe as possible. I've cut through tree trunks with this thing. Spine lock is tough - tougher than you. Prove me wrong.
+                        </p>
+
+                        <div class="why-love">
+                            <h4>Why I Love This</h4>
+                            <ul>
+                                <li>Lives in my truck - ready for emergencies</li>
+                                <li>Cuts through ropes and seat belts like butter</li>
+                                <li>Rounded safety edge prevents accidental injury</li>
+                                <li>Cut through tree trunks - built tank-tough</li>
+                                <li>Spine lock tougher than you (prove me wrong)</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-rating">
+                            <div class="rating">
+                                <div class="stars">★★★★★</div>
+                                <div class="review-count">Truck EDC Essential</div>
+                            </div>
+                        </div>
+
+                        <a href="https://amzn.to/4jdf9eM" class="cta-button" target="_blank" rel="noopener noreferrer">
+                            <span>Check Latest Price on Amazon</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-link">
+                <a href="#knives">
+                    <span>View All Knives</span>
+                    <span>→</span>
+                </a>
             </div>
         </section>
 
@@ -1144,201 +1026,6 @@
         </p>
     </footer>
 
-    <!-- Floating Promo Button -->
-    <button class="promo-button" onclick="openPromoModal()">
-        🧩 GADGETS & PUZZLES 20% OFF
-    </button>
-
-    <!-- Promo Modal -->
-    <div class="modal-overlay" id="promoModal" onclick="closePromoModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closePromoModal()">✕</button>
-
-            <div style="position: absolute; top: 20px; right: 70px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; padding: 10px 20px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
-                20% OFF
-            </div>
-
-            <h2 style="font-size: 2.2rem; margin-bottom: 15px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                🧩 EDC Gadgets & Puzzles - Special 20% OFF
-            </h2>
-            <p style="font-size: 1.15rem; color: #b0b0b0; margin-bottom: 25px; max-width: 800px;">
-                Unique puzzles, brain teasers, and EDC gadgets with <strong style="color: #ff8c32;">20% discount at checkout</strong> using my code.
-                These conversation-starting pieces are perfect additions to any EDC collection!
-            </p>
-
-            <div class="coupon-container" style="background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); border-radius: 12px; padding: 20px; margin-bottom: 40px; text-align: center; position: relative;">
-                <div id="copyNotification" class="copy-notification">✓ Copied to Clipboard!</div>
-                <div style="color: #0a0a0a; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">
-                    🎁 20% OFF COUPON CODE
-                </div>
-                <div class="coupon-code" onclick="copyCouponCode()" style="background: rgba(255, 255, 255, 0.95); border-radius: 8px; padding: 15px 25px; display: inline-block; margin-top: 5px;">
-                    <code id="couponCode" style="font-size: 1.8rem; font-weight: 900; letter-spacing: 3px; color: #0a0a0a; font-family: 'Courier New', monospace;">DOGMWWBQ</code>
-                </div>
-                <div class="click-instruction" style="color: #0a0a0a; font-size: 0.9rem; margin-top: 12px; font-weight: 700;">
-                    👆 Click code above to copy • Apply at Amazon checkout
-                </div>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                <!-- Bicycle -->
-                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; min-height: 200px; background: #FFFFFF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 140, 50, 0.2);">
-                        <img src="images/bicycle.jpeg" alt="Bicycle" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
-                    </div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Bicycle</h3>
-                    <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
-                        Premium cycling gear at an unbeatable price. Perfect for EDC enthusiasts who bike commute.
-                    </p>
-                    <div style="background: linear-gradient(135deg, rgba(255, 140, 50, 0.2) 0%, rgba(217, 115, 40, 0.15) 100%); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 2px solid rgba(255, 140, 50, 0.4); box-shadow: 0 4px 15px rgba(255, 140, 50, 0.2); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); animation: shimmer 2s infinite;"></div>
-                        <span style="color: #ff8c32; font-weight: 800; font-size: 1.2rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">💰 Save 20%</span>
-                    </div>
-                    <a href="https://amzn.to/49fikPt" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease;">
-                        <span>Get Deal</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Satellite in Cage -->
-                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; min-height: 200px; background: #FFFFFF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 140, 50, 0.2);">
-                        <img src="images/sattelite.jpeg" alt="Satellite in Cage" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
-                    </div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Satellite in Cage</h3>
-                    <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
-                        Unique tech accessory for the modern EDC setup. A conversation starter that's also functional.
-                    </p>
-                    <div style="background: linear-gradient(135deg, rgba(255, 140, 50, 0.2) 0%, rgba(217, 115, 40, 0.15) 100%); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 2px solid rgba(255, 140, 50, 0.4); box-shadow: 0 4px 15px rgba(255, 140, 50, 0.2); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); animation: shimmer 2s infinite;"></div>
-                        <span style="color: #ff8c32; font-weight: 800; font-size: 1.2rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">💰 Save 20%</span>
-                    </div>
-                    <a href="https://amzn.to/48VW5Nj" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease;">
-                        <span>Get Deal</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Trick Bolt -->
-                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; min-height: 200px; background: #FFFFFF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 140, 50, 0.2);">
-                        <img src="images/bolt.jpeg" alt="Trick Bolt" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
-                    </div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Trick Bolt</h3>
-                    <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
-                        The ultimate EDC puzzle tool. Compact, challenging, and perfect for keeping your hands busy.
-                    </p>
-                    <div style="background: linear-gradient(135deg, rgba(255, 140, 50, 0.2) 0%, rgba(217, 115, 40, 0.15) 100%); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 2px solid rgba(255, 140, 50, 0.4); box-shadow: 0 4px 15px rgba(255, 140, 50, 0.2); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); animation: shimmer 2s infinite;"></div>
-                        <span style="color: #ff8c32; font-weight: 800; font-size: 1.2rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">💰 Save 20%</span>
-                    </div>
-                    <a href="https://amzn.to/45aNVzi" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease;">
-                        <span>Get Deal</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Star in Circle -->
-                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; min-height: 200px; background: #FFFFFF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 140, 50, 0.2);">
-                        <img src="images/Star in Circle.jpeg" alt="Star in Circle" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
-                    </div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Star in Circle</h3>
-                    <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
-                        Unique geometric design accessory. A distinctive piece that stands out in any EDC collection.
-                    </p>
-                    <div style="background: linear-gradient(135deg, rgba(255, 140, 50, 0.2) 0%, rgba(217, 115, 40, 0.15) 100%); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 2px solid rgba(255, 140, 50, 0.4); box-shadow: 0 4px 15px rgba(255, 140, 50, 0.2); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); animation: shimmer 2s infinite;"></div>
-                        <span style="color: #ff8c32; font-weight: 800; font-size: 1.2rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">💰 Save 20%</span>
-                    </div>
-                    <a href="https://amzn.to/4s21DhO" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease;">
-                        <span>Get Deal</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Horseshoe -->
-                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 50, 0.2); border-radius: 16px; padding: 30px; transition: all 0.3s ease;">
-                    <div style="width: 100%; min-height: 200px; background: #FFFFFF; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 140, 50, 0.2);">
-                        <img src="images/horseshoe.jpeg" alt="Horseshoe" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
-                    </div>
-                    <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: #ffffff;">Horseshoe</h3>
-                    <p style="color: #999; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
-                        Classic symbol of good fortune. A unique addition to your EDC gear collection.
-                    </p>
-                    <div style="background: linear-gradient(135deg, rgba(255, 140, 50, 0.2) 0%, rgba(217, 115, 40, 0.15) 100%); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 2px solid rgba(255, 140, 50, 0.4); box-shadow: 0 4px 15px rgba(255, 140, 50, 0.2); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); animation: shimmer 2s infinite;"></div>
-                        <span style="color: #ff8c32; font-weight: 800; font-size: 1.2rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; z-index: 1;">💰 Save 20%</span>
-                    </div>
-                    <a href="https://amzn.to/4rWylkR" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #ff8c32 0%, #d97328 100%); color: #0a0a0a; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease;">
-                        <span>Get Deal</span>
-                        <span>→</span>
-                    </a>
-                </div>
-            </div>
-
-            <p style="text-align: center; margin-top: 30px; color: #888; font-size: 0.9rem;">
-                💡 <strong style="color: #ff8c32;">Pro Tip:</strong> Don't forget to apply coupon code <strong style="color: #ff8c32;">DOGMWWBQ</strong> at checkout to save 20%
-            </p>
-        </div>
-    </div>
-
-    <script>
-        function openPromoModal() {
-            const modal = document.getElementById('promoModal');
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            // Scroll to top of modal
-            modal.scrollTop = 0;
-        }
-
-        function closePromoModal(event) {
-            if (!event || event.target.classList.contains('modal-overlay') || event.target.classList.contains('modal-close')) {
-                document.getElementById('promoModal').classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        function copyCouponCode() {
-            const couponCode = 'DOGMWWBQ';
-            const notification = document.getElementById('copyNotification');
-
-            // Copy to clipboard
-            navigator.clipboard.writeText(couponCode).then(function() {
-                // Show notification
-                notification.classList.add('show');
-
-                // Hide notification after 2 seconds
-                setTimeout(function() {
-                    notification.classList.remove('show');
-                }, 2000);
-            }).catch(function(err) {
-                // Fallback for older browsers
-                const textArea = document.createElement('textarea');
-                textArea.value = couponCode;
-                textArea.style.position = 'fixed';
-                textArea.style.left = '-999999px';
-                document.body.appendChild(textArea);
-                textArea.select();
-                try {
-                    document.execCommand('copy');
-                    notification.classList.add('show');
-                    setTimeout(function() {
-                        notification.classList.remove('show');
-                    }, 2000);
-                } catch (err) {
-                    console.error('Failed to copy:', err);
-                }
-                document.body.removeChild(textArea);
-            });
-        }
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closePromoModal();
-            }
-        });
-    </script>
 
 </body>
 </html>
